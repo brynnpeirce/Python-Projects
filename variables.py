@@ -9,13 +9,14 @@ class Job:
 
     def Resume(self):
         name = input("Enter your name: ")
+        job_title = input("Enter desired title: ")
         email = input ("Enter your email: ")
         job_experience = input ("Enter job experience: ")
         education = input("Enter education information: ")
-        if (name == name):
-            print("{}, thanks for applying!".format(name))
+        if (job_title == self.title):
+            print("{}, thanks for applying for {}!".format(name,self.title))
         else:
-            print("You need at least your name entered to apply.")
+            print("Sorry that position has already been filled")
 
 # Child class Restaurant
 class Restaurant(Job):
@@ -26,12 +27,13 @@ class Restaurant(Job):
 
     def Resume(self):
         name = input("Enter your name: ")
+        chef_title = input("Enter desired title: ")
         email = input ("Enter your email: ")
         cooking_experience = input ("Enter cooking experience: ")
-        if (name == name):
-            print("{}, thanks for applying!".format(name))
+        if (chef_title == self.title):
+            print("{}, thanks for applying for {}!".format(name, self.title))
         else:
-            print("You need at least your name entered to apply.") 
+            print("Sorry that position has already been filled.") 
 
 
 # Child class Hospital
@@ -43,13 +45,14 @@ class Hospital(Job):
 
     def Resume(self):
         name = input("Enter your name: ")
+        Health_title = input("Enter desired title: ")
         email = input ("Enter your email: ")
         Healthcare_experience = input ("Enter healthcare experience: ")
         education = input("Enter education information: ")
-        if (name == name):
-            print("{}, thanks for applying!".format(name))
+        if (Health_title == self.title):
+            print("{}, thanks for applying for {}!".format(name,self.title))
         else:
-            print("You need at least your name entered to apply.")
+            print("Sorry that position has already been filled")
 
 
 
