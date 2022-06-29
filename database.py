@@ -14,7 +14,7 @@ with conn: # with loop. While this database is open ...
     conn.commit() #saved changes
 conn.close() #closed connection to db
     
-conn = sqlite3.connect('data.bd') #connection with db
+conn = sqlite3.connect('data.db') #connection with db
 
 fileList = ('information.docx','Hello.txt','myImage.png','myMovie.mpg', \
             'World.txt','data.pdf','myPhoto.jpg')
@@ -22,6 +22,6 @@ for x in fileList:
     if x.endswith('.txt'):
         with conn:
             cur = conn.cursor()
-            cur.execute("INSERT INTO tbl_data (col_datatype) VALUES (?)",(x))
+            cur.execute("INSERT INTO tbl_data (col_datatype) VALUES (?)",(x,))
             print(x)
 conn.close()
