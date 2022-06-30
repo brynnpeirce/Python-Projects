@@ -13,13 +13,13 @@ print(zoo._animalVar)
 
 class Cars: # created a class called cars
     def __init__(self):
-        self._carSpeedVar = 50 # setting carespeed to 50
+        self.__carSpeedVar = 50 # setting carespeed to 50
 
     def getCarSpeed(self): #using get method
-        print(self._carSpeedVar)
+        print(self.__carSpeedVar)
 
     def setCarSpeed(self, private): # using set method
-        self._carSpeedVar = private
+        self.__carSpeedVar = private
 
 
 speed = Cars()
