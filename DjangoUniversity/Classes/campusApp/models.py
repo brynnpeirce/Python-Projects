@@ -21,6 +21,6 @@ class UniversityCampus(models.Model):
 
 # Removes added 's' that Django adds to the model name in the browser display
 
-class Meta:
-    verbose_name_plural = "University Campus"
+    class Meta:
+        verbose_name_plural = "University Campus"
 
