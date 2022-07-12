@@ -18,4 +18,6 @@ previously stored entries</p>
 Using Django. A user can use this banking application to create an account, add transactions and withdrawal amounts. The application will also calculate balances and display current information. </p>
 
 
-<a href="http://brynnpeirce.com/">Portfoio website </a>
+<p>About Me!</p>
+
+<a href="http://brynnpeirce.com/">Portfolio website </a>
